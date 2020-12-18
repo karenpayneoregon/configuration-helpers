@@ -15,6 +15,26 @@ Demonstrates how to use a class project to get connection strings for Entity Fra
 [microsoft.extensions.configuration.FileExensions](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions/)<br/>
 [microsoft.extensions.configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json/)
 
+#### Sample appsettings.json
+```json
+{
+  "database": {
+    "DatabaseServer": ".\\SQLEXPRESS",
+    "Catalog": "School",
+    "IntegratedSecurity": "true",
+    "UsingLogging": "true"
+  },
+  "ConnectionStrings": {
+    "DevelopmentConnection": "Server=.\\SQLEXPRESS;Database=School;Integrated Security=true",
+    "ProductionConnection": "Server=ProdServerDoesNotExists;Database=School;Integrated Security=true"
+  },
+  "Environment": {
+    "Production": false
+  }
+}
+```
+
+
 # Microsoft TechNet article
 
 TODO
