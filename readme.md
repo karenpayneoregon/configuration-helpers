@@ -15,7 +15,7 @@ Demonstrates how to use a class project to get connection strings for Entity Fra
 [microsoft.extensions.configuration.FileExensions](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions/)<br/>
 [microsoft.extensions.configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json/)
 
-#### Sample appsettings.json
+#### Sample appsettings.json 1
 ```json
 {
   "database": {
@@ -34,7 +34,28 @@ Demonstrates how to use a class project to get connection strings for Entity Fra
 }
 ```
 
+#### Sample appsettings.json 2
 
+```json
+{
+  "GeneralSettings": {
+    "LogExceptions": true,
+    "DatabaseSettings": {
+      "DatabaseServer": ".\\SQLEXPRESS",
+      "Catalog": "School",
+      "IntegratedSecurity": true,
+      "UsingLogging": true
+    },
+    "EmailSettings": {
+      "Host": "smtp.gmail.com",
+      "Port": 587,
+      "EnableSsl": true,
+      "DefaultCredentials": false,
+      "PickupDirectoryLocation": "MailDrop"
+    }
+  }
+}
+```
 # Microsoft TechNet article
 
 TODO
