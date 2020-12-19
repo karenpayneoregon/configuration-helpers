@@ -92,6 +92,14 @@ namespace ConfigurationHelper
                 return null;
             }
         }
+        public static GeneralSettings Configuration()
+        {
+
+            InitConfiguration();
+            
+            return InitOptions<GeneralSettings>("GeneralSettings");
+
+        }
 
         /// <summary>
         /// Initialize ConfigurationBuilder

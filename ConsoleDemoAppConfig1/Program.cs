@@ -15,7 +15,7 @@ namespace ConsoleDemoAppConfig1
 
         static void StandardConnection()
         {
-            WriteSection(nameof(StandardConnection));
+            WriteSectionYellow(nameof(StandardConnection));
 
             SchoolContext context = new();
             var people = context.Person.ToList();

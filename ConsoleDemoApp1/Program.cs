@@ -30,7 +30,7 @@ namespace ConsoleDemoApp1
         /// </remarks>
         private static void StandardConnection()
         {
-            WriteSection(nameof(StandardConnection));
+            WriteSectionYellow(nameof(StandardConnection));
             
             SchoolContext context = new();
             var people = context.Person.ToList();
@@ -47,7 +47,7 @@ namespace ConsoleDemoApp1
         /// </remarks>
         private static void SecureConnection()
         {
-            WriteSection(nameof(SecureConnection));
+            WriteSectionYellow(nameof(SecureConnection));
 
             SchoolContextSecure context = new();
             var people = context.Person.ToList();
