@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using ConfigurationHelper.Classes;
 using Microsoft.Extensions.Configuration;
+using SecurityHelper;
 using Environment = ConfigurationHelper.Classes.Environment;
 
 namespace ConfigurationHelper
@@ -52,6 +53,17 @@ namespace ConfigurationHelper
                 .GetConnectionString(InitOptions<Environment>("Environment").Production ?
                     "ProductionConnection" :
                     "DevelopmentConnection");
+        }
+        /// <summary>
+        /// Read encrypted connection string
+        /// </summary>
+        /// <returns></returns>
+        public static string GetConnectionStringSecure()
+        {
+            return ApplicationConfiguration.Reader(ConfigurationBuilderRoot()
+                .GetConnectionString(InitOptions<Environment>("Environment").Production ?
+                    "ProductionConnection" :
+                    "DevelopmentConnection"));
         }
         /// <summary>
         /// Get connection strings for environments and see if dev or prod is to be used

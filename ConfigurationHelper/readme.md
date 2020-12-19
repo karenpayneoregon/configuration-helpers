@@ -4,12 +4,14 @@ Contains help methods to configure a DbContext connection, environment and loggi
 
 Although C# 9 is used (configured in each project file) the majority of code will work with lower versions of C# while the recommendation is to use C# 9.
 
-|Visibility|Method/property   |Definition   |
+|Scope|Method/property   |Definition   |
 | :---         |  :---  | :--- |
 |private|_fileName   |Configuration file in frontend project   |
 |public|ConnectionString   | Used to get one connection string (no environent)   |
 |public|UseLogging   |true to use logging, false no logging   |
 |public|GetSettings   |Get all connection string with environment   |
+|public|GetConnectionString   |Get prod or dev connection string insecure   |
+|public|GetConnectionStringSecure   |Get prod or dev connection string secure   |
 |private|InitConfiguration   |Initialize ConfigurationBuilder   |
 |private|ConfigurationBuilderRoot   |Configuration building   |
 |public|InitOptions   |Generic method to read section in configuration file   |
