@@ -1,6 +1,6 @@
 ﻿# About 
 
-Example for appsettings.json to store database settings and email settings.
+:green_square: Example for appsettings.json to store database settings and email settings.
 
 ## Usage
 ```csharp

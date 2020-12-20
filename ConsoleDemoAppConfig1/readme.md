@@ -1,6 +1,6 @@
 ﻿# About
 
-This is more of a conventional way to work with connection string for different environments.
+:green_square: This is more of a conventional way to work with connection string for different environments.
 
 # Taken from
 
