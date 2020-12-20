@@ -11,6 +11,7 @@ namespace ConfigurationHelper
     public class Helper
     {
         private const string _applicationMainFileName = "appsettings.json";
+        private const string _columnsFileName = "columnsettings.json";
 
         /// <summary>
         /// Connection string for application database stored in appsettings.json
@@ -93,6 +94,13 @@ namespace ConfigurationHelper
                 return null;
             }
         }
+
+        public static List<TableContainer> ColumnTableContainers()
+        {
+            var config = InitColumnsConfiguration();
+            return  config.GetSection("TableContainer").Get<List<TableContainer>>();
+
+        }
         public static GeneralSettings Configuration()
         {
 
@@ -103,7 +111,7 @@ namespace ConfigurationHelper
         }
 
         /// <summary>
-        /// Initialize ConfigurationBuilder
+        /// Initialize ConfigurationBuilder for appsettings
         /// </summary>
         /// <returns>IConfigurationRoot</returns>
         private static IConfigurationRoot InitMainConfiguration()
@@ -116,6 +124,21 @@ namespace ConfigurationHelper
             return builder.Build();
 
         }
+        /// <summary>
+        /// Initialize ConfigurationBuilder for columnsettings.json
+        /// </summary>
+        /// <returns></returns>
+        private static IConfigurationRoot InitColumnsConfiguration()
+        {
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile(_columnsFileName);
+
+            return builder.Build();
+
+        }
+
         private static IConfigurationRoot ConfigurationMainBuilderRoot()
         {
             var builder = new ConfigurationBuilder();

@@ -79,7 +79,12 @@ TODO
 
 # See also
 
-[Entity Framework/Entity Framework Core dynamic connection strings (C#)](https://social.technet.microsoft.com/wiki/contents/articles/54079.entity-frameworkentity-framework-core-dynamic-connection-strings-c.aspx)
+[Connectionstring.com](https://www.connectionstrings.com/) for various connections string for different providers.
+
+# TechNet 
+
+- [C# Working with SQL-Server connection](https://social.technet.microsoft.com/wiki/contents/articles/53379.c-working-with-sql-server-connection.aspx)
+- [Entity Framework/Entity Framework Core dynamic connection strings (C#)](https://social.technet.microsoft.com/wiki/contents/articles/54079.entity-frameworkentity-framework-core-dynamic-connection-strings-c.aspx)
 
 How to setup Entity Framework 6 and Entity Framework Core connections for desktop applications for different environments encrypted and unencrypted connection strings read from app.config
 

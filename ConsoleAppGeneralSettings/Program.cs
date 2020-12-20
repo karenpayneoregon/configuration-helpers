@@ -9,7 +9,7 @@ namespace ConsoleAppGeneralSettings
         static void Main(string[] args)
         {
             
-            WriteHeader("Code sample");
+            WriteHeader("General settings");
             
             var configuration = Helper.Configuration();
 

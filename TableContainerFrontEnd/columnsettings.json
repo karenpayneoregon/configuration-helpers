@@ -1,0 +1,44 @@
+﻿{
+  "TableContainer": [
+    {
+      "Name": "Person",
+      "Ordinal": 0,
+      "Visible": false,
+      "Column": "IdColumn",
+      "DisplayText": "Id",
+      "DataPropertyName": "PersonId"
+    },
+    {
+      "Name": "Person",
+      "Ordinal": 1,
+      "Visible": true,
+      "Column": "FirstNameColumn",
+      "DisplayText": "First name",
+      "DataPropertyName": "FirstName"
+    },
+    {
+      "Name": "Person",
+      "Ordinal": 2,
+      "Visible": true,
+      "Column": "LastNameColumn",
+      "DisplayText": "Last name",
+      "DataPropertyName": "LastName"
+    },
+    {
+      "Name": "Course",
+      "Ordinal": 0,
+      "Visible": false,
+      "Column": "CourseIdColumn",
+      "DisplayText": "CourseId",
+      "DataPropertyName": "CourseId"
+    },
+    {
+      "Name": "Course",
+      "Ordinal": 1,
+      "Visible": true,
+      "Column": "TitleColumn",
+      "DisplayText": "Name",
+      "DataPropertyName": "Title"
+    }
+  ]
+}

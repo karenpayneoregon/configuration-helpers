@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationHelperConventi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableContainerFrontEnd", "TableContainerFrontEnd\TableContainerFrontEnd.csproj", "{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +100,7 @@ Global
 		{B397CC29-27EC-4194-943D-9BC936FEB008} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
 		{4357462D-2D66-496D-84A5-EE4CB1CE21E7} = {32BF2DD6-9C65-4375-9F22-E3FACF83FE3E}
 		{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A} = {32BF2DD6-9C65-4375-9F22-E3FACF83FE3E}
+		{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA2B729D-4928-4982-B0C2-724095A98E0E}

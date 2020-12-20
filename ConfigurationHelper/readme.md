@@ -12,7 +12,8 @@ Although C# 9 is used (configured in each project file) the majority of code wil
 |public|GetSettings   |Get all connection string with environment   |
 |public|GetConnectionString   |Get prod or dev connection string insecure   |
 |public|GetConnectionStringSecure   |Get prod or dev connection string secure   |
-|private|InitConfiguration   |Initialize ConfigurationBuilder   |
+|private|InitMainConfiguration   |Initialize ConfigurationBuilder for appsettings.json   |
+|private|InitColumnsConfiguration   |Initialize ConfigurationBuilder for columnsettings.json   |
 |private|ConfigurationBuilderRoot   |Configuration building   |
 |public|InitOptions   |Generic method to read section in configuration file   |
 
