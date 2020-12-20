@@ -1,6 +1,6 @@
 ﻿# About
 
-Demonstrates how to use json file for connections.
+:green_square: Demonstrates how to use json file for connections.
 
 # Configuration file 
 
