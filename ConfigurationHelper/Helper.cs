@@ -10,8 +10,14 @@ namespace ConfigurationHelper
 {
     public class Helper
     {
-        private const string _applicationMainFileName = "appsettings.json";
-        private const string _columnsFileName = "columnsettings.json";
+        
+        /// <summary>
+        /// Configuration file name to read from.
+        /// * Add path if needed
+        /// * Change file name for secondary configuration files
+        /// </summary>
+        public static string ConfigurationFileName { get; set; } = "appsettings.json";
+
 
         /// <summary>
         /// Connection string for application database stored in appsettings.json
@@ -97,7 +103,7 @@ namespace ConfigurationHelper
 
         public static List<TableContainer> ColumnTableContainers()
         {
-            var config = InitColumnsConfiguration();
+            var config = InitMainConfiguration();
             return  config.GetSection("TableContainer").Get<List<TableContainer>>();
 
         }
@@ -119,30 +125,27 @@ namespace ConfigurationHelper
 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(_applicationMainFileName);
+                .AddJsonFile(ConfigurationFileName);
 
             return builder.Build();
 
         }
-        /// <summary>
-        /// Initialize ConfigurationBuilder for columnsettings.json
-        /// </summary>
-        /// <returns></returns>
-        private static IConfigurationRoot InitColumnsConfiguration()
-        {
 
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(_columnsFileName);
+        //private static IConfigurationRoot InitColumnsConfiguration()
+        //{
 
-            return builder.Build();
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(Directory.GetCurrentDirectory())
+        //        .AddJsonFile(ConfigurationFileName);
 
-        }
+        //    return builder.Build();
+
+        //}
 
         private static IConfigurationRoot ConfigurationMainBuilderRoot()
         {
             var builder = new ConfigurationBuilder();
-            builder.AddJsonFile(_applicationMainFileName, optional: false);
+            builder.AddJsonFile(ConfigurationFileName, optional: false);
 
             var configuration = builder.Build();
             return configuration;

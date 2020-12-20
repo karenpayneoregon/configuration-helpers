@@ -16,7 +16,7 @@ namespace TableContainerFrontEnd
         {
 
             WriteHeader("Table columns");
-            
+            Helper.ConfigurationFileName = "columnsettings.json";
             var results = Helper.ColumnTableContainers()
                 .GroupBy(tc => tc.Name)
                 .Select((@group) => new ColumnItemGroup {TableName = @group.Key, Columns = @group.ToList()});

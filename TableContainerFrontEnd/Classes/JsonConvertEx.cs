@@ -15,7 +15,8 @@ namespace TableContainerFrontEnd.Classes
         /// <returns></returns>
         public static string SerializeObject<T>(T value)
         {
-            var sb = new StringBuilder();
+            StringBuilder sb = new();
+            
             var sw = new StringWriter(sb, CultureInfo.InvariantCulture);
 
             var jsonSerializer = JsonSerializer.CreateDefault();

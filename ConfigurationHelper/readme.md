@@ -4,18 +4,20 @@ Contains help methods to configure a DbContext connection, environment and loggi
 
 Although C# 9 is used (configured in each project file) the majority of code will work with lower versions of C# while the recommendation is to use C# 9.
 
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
 |Scope|Method/property   |Definition   |
 | :---         |  :---  | :--- |
-|private|_fileName   |Configuration file in frontend project   |
-|public|ConnectionString   | Used to get one connection string (no environent)   |
-|public|UseLogging   |true to use logging, false no logging   |
+|private|ConfigurationFileName (P)   |Configuration file in frontend project   |
+|public|ConnectionString (M)   | Used to get one connection string (no environent)   |
+|public|UseLogging (M)   |true to use logging, false no logging   |
 |public|GetSettings   |Get all connection string with environment   |
-|public|GetConnectionString   |Get prod or dev connection string insecure   |
-|public|GetConnectionStringSecure   |Get prod or dev connection string secure   |
-|private|InitMainConfiguration   |Initialize ConfigurationBuilder for appsettings.json   |
-|private|InitColumnsConfiguration   |Initialize ConfigurationBuilder for columnsettings.json   |
-|private|ConfigurationBuilderRoot   |Configuration building   |
-|public|InitOptions   |Generic method to read section in configuration file   |
+|public|GetConnectionString (M)   |Get prod or dev connection string insecure   |
+|public|GetConnectionStringSecure (M)   |Get prod or dev connection string secure   |
+|private|InitMainConfiguration (M)  |Initialize ConfigurationBuilder for appsettings.json   |
+|private|InitColumnsConfiguration (M)  |Initialize ConfigurationBuilder for columnsettings.json   |
+|private|ConfigurationBuilderRoot (M)   |Configuration building   |
+|public|InitOptions (M)  |Generic method to read section in configuration file   |
 
 # Requires
 - Microsoft Visual Studio 2019
