@@ -10,7 +10,8 @@ namespace ConfigurationHelper
 {
     public class Helper
     {
-        private static string _fileName = "appsettings.json";
+        private const string _applicationMainFileName = "appsettings.json";
+
         /// <summary>
         /// Connection string for application database stored in appsettings.json
         /// Another option would be to have the full connection string in the json file.
@@ -19,7 +20,7 @@ namespace ConfigurationHelper
         public static string ConnectionString()
         {
 
-            InitConfiguration();
+            InitMainConfiguration();
             var applicationSettings = InitOptions<DatabaseSettings>("database");
 
             var connectionString =
@@ -37,7 +38,7 @@ namespace ConfigurationHelper
         public static bool UseLogging()
         {
             
-            InitConfiguration();
+            InitMainConfiguration();
             
             var applicationSettings = InitOptions<ApplicationSettings>("database");
 
@@ -49,7 +50,7 @@ namespace ConfigurationHelper
         /// </summary>
         public static string GetConnectionString()
         {
-            return ConfigurationBuilderRoot()
+            return ConfigurationMainBuilderRoot()
                 .GetConnectionString(InitOptions<Environment>("Environment").Production ?
                     "ProductionConnection" :
                     "DevelopmentConnection");
@@ -60,7 +61,7 @@ namespace ConfigurationHelper
         /// <returns></returns>
         public static string GetConnectionStringSecure()
         {
-            return ApplicationConfiguration.Reader(ConfigurationBuilderRoot()
+            return ApplicationConfiguration.Reader(ConfigurationMainBuilderRoot()
                 .GetConnectionString(InitOptions<Environment>("Environment").Production ?
                     "ProductionConnection" :
                     "DevelopmentConnection"));
@@ -75,7 +76,7 @@ namespace ConfigurationHelper
 
             try
             {
-                InitConfiguration();
+                InitMainConfiguration();
                 
                 var connectionStrings = InitOptions<ConnectionStrings>("ConnectionStrings");
                 var environment = InitOptions<Environment>("Environment");
@@ -95,7 +96,7 @@ namespace ConfigurationHelper
         public static GeneralSettings Configuration()
         {
 
-            InitConfiguration();
+            InitMainConfiguration();
             
             return InitOptions<GeneralSettings>("GeneralSettings");
 
@@ -105,20 +106,20 @@ namespace ConfigurationHelper
         /// Initialize ConfigurationBuilder
         /// </summary>
         /// <returns>IConfigurationRoot</returns>
-        private static IConfigurationRoot InitConfiguration()
+        private static IConfigurationRoot InitMainConfiguration()
         {
 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(_fileName);
+                .AddJsonFile(_applicationMainFileName);
 
             return builder.Build();
 
         }
-        private static IConfigurationRoot ConfigurationBuilderRoot()
+        private static IConfigurationRoot ConfigurationMainBuilderRoot()
         {
             var builder = new ConfigurationBuilder();
-            builder.AddJsonFile(_fileName, optional: false);
+            builder.AddJsonFile(_applicationMainFileName, optional: false);
 
             var configuration = builder.Build();
             return configuration;
@@ -131,7 +132,7 @@ namespace ConfigurationHelper
         /// <returns>Instance of T</returns>
         public static T InitOptions<T>(string section) where T : new()
         {
-            var config = InitConfiguration();
+            var config = InitMainConfiguration();
             return config.GetSection(section).Get<T>();
         }
     }
