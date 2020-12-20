@@ -4,20 +4,23 @@ Contains help methods to configure a DbContext connection, environment and loggi
 
 Although C# 9 is used (configured in each project file) the majority of code will work with lower versions of C# while the recommendation is to use C# 9.
 
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 |Scope|Method/property   |Definition   |
 | :---         |  :---  | :--- |
-|private|ConfigurationFileName (P)   |Configuration file in frontend project   |
-|public|ConnectionString (M)   | Used to get one connection string (no environent)   |
-|public|UseLogging (M)   |true to use logging, false no logging   |
-|public|GetSettings   |Get all connection string with environment   |
-|public|GetConnectionString (M)   |Get prod or dev connection string insecure   |
-|public|GetConnectionStringSecure (M)   |Get prod or dev connection string secure   |
-|private|InitMainConfiguration (M)  |Initialize ConfigurationBuilder for appsettings.json   |
-|private|InitColumnsConfiguration (M)  |Initialize ConfigurationBuilder for columnsettings.json   |
-|private|ConfigurationBuilderRoot (M)   |Configuration building   |
-|public|InitOptions (M)  |Generic method to read section in configuration file   |
+|private|ConfigurationFileName :small_blue_diamond:   |Configuration file in frontend project   |
+|public|ConnectionString :small_orange_diamond:   | Used to get one connection string (no environent)   |
+|public|UseLogging :small_orange_diamond:   |true to use logging, false no logging   |
+|public|GetSettings :small_orange_diamond:  |Get all connection string with environment   |
+|public|GetConnectionString :small_orange_diamond:   |Get prod or dev connection string insecure   |
+|public|GetConnectionStringSecure :small_orange_diamond:   |Get prod or dev connection string secure   |
+|private|InitMainConfiguration :small_orange_diamond:  |Initialize ConfigurationBuilder for appsettings.json   |
+|private|InitColumnsConfiguration :small_orange_diamond:  |Initialize ConfigurationBuilder for columnsettings.json   |
+|private|ConfigurationBuilderRoot :small_orange_diamond:   |Configuration building   |
+|public|InitOptions :small_orange_diamond:  |Generic method to read section in configuration file   |
+
+:small_orange_diamond: method
+
+:small_blue_diamond: property
 
 # Requires
 - Microsoft Visual Studio 2019
