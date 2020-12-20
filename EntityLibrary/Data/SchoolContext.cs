@@ -28,8 +28,13 @@ namespace EntityLibrary.Data
         }
 
         public virtual DbSet<Person> Person { get; set; }
-
+        
+        /*
+         * Change the file name as desired along with a path if the file should be
+         * in another location than the application executable path.
+         */
         private readonly StreamWriter _logStream = new StreamWriter("ef-log.txt", append: true);
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

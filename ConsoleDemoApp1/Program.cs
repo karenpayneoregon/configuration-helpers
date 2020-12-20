@@ -7,7 +7,7 @@ using static ConsoleHelpers.ConsoleColors;
 namespace ConsoleDemoApp1
 {
     /// <summary>
-    /// Demonstrate secure and insecure connection strings. Both code samples
+    /// Demonstrates a secure and insecure connection strings. Both code samples
     /// need attention before running in regards to comments in each method.
     /// </summary>
     /// <remarks>

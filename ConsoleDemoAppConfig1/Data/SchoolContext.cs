@@ -1,16 +1,13 @@
-﻿
-using System;
-using System.IO;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System.IO;
 using System.Threading.Tasks;
 using ConsoleDemoAppConfig1.Data.Configurations;
 using ConsoleDemoAppConfig1.Models;
+using Microsoft.EntityFrameworkCore;
 using static System.Configuration.ConfigurationManager;
 
 #nullable disable
 
-namespace EntityLibrary.Data
+namespace ConsoleDemoAppConfig1.Data
 {
     public partial class SchoolContext : DbContext
     {
@@ -26,6 +23,10 @@ namespace EntityLibrary.Data
 
         public virtual DbSet<Person> Person { get; set; }
 
+        /*
+         * Change the file name as desired along with a path if the file should be
+         * in another location than the application executable path.
+         */
         private readonly StreamWriter _logStream = new StreamWriter("ef-log.txt", append: true);
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -40,8 +41,11 @@ namespace EntityLibrary.Data
 #else
                 environment = "ProductionConnection";
 #endif
-                optionsBuilder.UseSqlServer(AppSettings[environment]);
-
+                var connectionString = AppSettings[environment];
+                /*
+                 * Here is a case for having unhandled exception handling in the application
+                 */
+                if (connectionString != null) optionsBuilder.UseSqlServer(connectionString);
             }
         }
 
