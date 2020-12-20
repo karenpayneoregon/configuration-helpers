@@ -75,7 +75,7 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 ```
 # Microsoft TechNet article
 
-TODO
+[.NET Core desktop application configurations](https://social.technet.microsoft.com/wiki/contents/articles/54173.net-core-desktop-application-configurations-c.aspx)
 
 # See also
 

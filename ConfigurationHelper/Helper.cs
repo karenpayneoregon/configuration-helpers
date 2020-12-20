@@ -131,17 +131,6 @@ namespace ConfigurationHelper
 
         }
 
-        //private static IConfigurationRoot InitColumnsConfiguration()
-        //{
-
-        //    var builder = new ConfigurationBuilder()
-        //        .SetBasePath(Directory.GetCurrentDirectory())
-        //        .AddJsonFile(ConfigurationFileName);
-
-        //    return builder.Build();
-
-        //}
-
         private static IConfigurationRoot ConfigurationMainBuilderRoot()
         {
             var builder = new ConfigurationBuilder();

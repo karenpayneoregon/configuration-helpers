@@ -29,11 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecurityHelperConfiguration
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppGeneralSettings", "ConsoleAppGeneralSettings\ConsoleAppGeneralSettings.csproj", "{B397CC29-27EC-4194-943D-9BC936FEB008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationHelperConventional", "ConfigurationHelperConventional\ConfigurationHelperConventional.csproj", "{4357462D-2D66-496D-84A5-EE4CB1CE21E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationHelperConventional", "ConfigurationHelperConventional\ConfigurationHelperConventional.csproj", "{4357462D-2D66-496D-84A5-EE4CB1CE21E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{BA396868-3DEB-4A46-851C-F3EAD2E0EE5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableContainerFrontEnd", "TableContainerFrontEnd\TableContainerFrontEnd.csproj", "{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableContainerFrontEnd", "TableContainerFrontEnd\TableContainerFrontEnd.csproj", "{4DAB0500-BEB5-4063-ACE4-9B1CDFA643C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

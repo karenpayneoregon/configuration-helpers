@@ -7,6 +7,5 @@
         public bool EnableSsl { get; set; }
         public bool DefaultCredentials { get; set; }
         public string PickupDirectoryLocation { get; set; }
-
     }
 }
