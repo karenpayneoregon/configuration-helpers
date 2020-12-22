@@ -18,6 +18,9 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 }
 ```
 
+# VB.NET
+
+:gear: The project visualBasicConnectionCodeSample (.NET Core 5) uses the C# connection helper.
 
 # Requires
 
