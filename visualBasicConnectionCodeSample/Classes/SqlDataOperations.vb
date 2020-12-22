@@ -3,9 +3,9 @@ Imports ConfigurationHelper
 
 Namespace Classes
     Public Class SqlDataOperations
-        Private Shared ReadOnly _connectionString As String = Helper.GetConnectionString()
+        Private Shared ReadOnly ConnectionString As String = Helper.GetConnectionString()
         Public Shared LastException As Exception
-        Public Shared Function LoadCustomerRecordsUsingDataTable() As DataTable
+        Public Shared Function LoadPersonRecordsUsingDataTable() As DataTable
 
             Dim selectStatement =
                     <SQL>
@@ -25,7 +25,7 @@ Namespace Classes
 
             Dim personDataTable = New DataTable
 
-            Using cn As New SqlConnection With {.ConnectionString = _connectionString}
+            Using cn As New SqlConnection With {.ConnectionString = ConnectionString}
                 Using cmd As New SqlCommand With {.Connection = cn}
                     Try
                         cmd.CommandText = selectStatement
