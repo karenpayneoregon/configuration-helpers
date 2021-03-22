@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connections", "Connections\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionsFrontEnd", "ConnectionsFrontEnd\ConnectionsFrontEnd.csproj", "{8C3F5DA8-1A63-49D5-801A-2C869D052505}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conventional", "Conventional", "{C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationAppConfigConsoleApp", "ConfigurationAppConfigConsoleApp\ConfigurationAppConfigConsoleApp.csproj", "{185F91F3-0FA6-4917-972D-8CBF6797C046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,10 @@ Global
 		{8C3F5DA8-1A63-49D5-801A-2C869D052505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C3F5DA8-1A63-49D5-801A-2C869D052505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C3F5DA8-1A63-49D5-801A-2C869D052505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +133,8 @@ Global
 		{B3EC4B61-FC7F-4EE8-AFC8-482FE80EF90B} = {32BF2DD6-9C65-4375-9F22-E3FACF83FE3E}
 		{5E07F15D-565F-4B19-802B-CB58C3717803} = {B3EC4B61-FC7F-4EE8-AFC8-482FE80EF90B}
 		{8C3F5DA8-1A63-49D5-801A-2C869D052505} = {B3EC4B61-FC7F-4EE8-AFC8-482FE80EF90B}
+		{C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
+		{185F91F3-0FA6-4917-972D-8CBF6797C046} = {C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA2B729D-4928-4982-B0C2-724095A98E0E}
