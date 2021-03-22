@@ -1,0 +1,24 @@
+﻿<Window
+    x:Class="ConnectionsFrontEnd.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ConnectionsFrontEnd"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Appsettings.json code sample"
+    Width="295.455"
+    Height="158.523"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <Button
+            Width="201"
+            Height="58"
+            Margin="37,29,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="Test Connection" />
+
+    </Grid>
+</Window>
