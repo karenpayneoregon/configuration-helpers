@@ -86,7 +86,7 @@ MessageBox.Show(DataOperations.TestConnection() ?
 
 # NuGet packages 
 
-These are required in the [class project](https://github.com/karenpayneoregon/configuration-helpers/tree/master/Connections), not in this project.
+These are required in this project not the front-end project.
 
 [microsoft.extensions.configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration/) <br/>
 [microsoft.extensions.configuration.binder](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder/)<br/>
