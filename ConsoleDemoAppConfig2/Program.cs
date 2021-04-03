@@ -10,8 +10,16 @@ namespace ConsoleDemoAppConfig2
         {
 
             using var cn = new SqlConnection(AppSettings["DevConnection"]);
-            cn.Open();
-            Console.WriteLine("Open");
+            try
+            {
+                cn.Open();
+                Console.WriteLine("Open");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
             Console.ReadLine();
         }
     }
