@@ -19,3 +19,4 @@ This was done with .NET Framework Core while the same applies to .NET Framework.
 ![img](assets/f1.png)
 
 ![img](assets/f2.png)
+
