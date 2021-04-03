@@ -6,7 +6,7 @@ namespace ConsoleDemoAppConfig2
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             using var cn = new SqlConnection(AppSettings["DevConnection"]);
