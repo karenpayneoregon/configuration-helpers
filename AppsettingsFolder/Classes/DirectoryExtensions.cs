@@ -31,14 +31,7 @@ namespace AppsettingsFolder.Classes
 
             if (folderList.Count > 0 && level > 0)
             {
-                if (level - 1 <= folderList.Count - 1)
-                {
-                    return folderList[level - 1];
-                }
-                else
-                {
-                    return folderName;
-                }
+                return level - 1 <= folderList.Count - 1 ? folderList[level - 1] : folderName;
             }
             else
             {
@@ -48,8 +41,5 @@ namespace AppsettingsFolder.Classes
 
         public static string CurrentSolutionFolder() => AppDomain.CurrentDomain.BaseDirectory.UpperFolder(5);
         public static string CurrentProjectFolder() => AppDomain.CurrentDomain.BaseDirectory.UpperFolder(4);
-
-
-
     }
 }

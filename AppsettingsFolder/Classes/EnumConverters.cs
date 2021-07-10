@@ -10,9 +10,7 @@ namespace AppsettingsFolder.Classes
         /// <typeparam name="T"></typeparam>
         /// <param name="sender"></param>
         /// <returns></returns>
-        public static T ToEnum<T>(this int sender) where T : struct
-        {
-            return (T)Enum.ToObject(typeof(T), sender);
-        }
+        public static T ToEnum<T>(this int sender) where T : struct 
+            => (T)Enum.ToObject(typeof(T), sender);
     }
 }
