@@ -40,8 +40,7 @@ namespace AppsettingsFolder.Classes
             Environments.Production => ProductionConnectionString,
             Environments.Test => TestConnectionString,
             Environments.Development => DevelopmentConnectionString,
-            _ => throw new ArgumentOutOfRangeException(
-                nameof(environment), environment, null)
+            _ => throw new ArgumentOutOfRangeException(nameof(environment), environment, null)
         };
 
         /// <summary>
@@ -73,7 +72,6 @@ namespace AppsettingsFolder.Classes
         {
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile(ConfigurationFileName);
 
             return builder.Build();
