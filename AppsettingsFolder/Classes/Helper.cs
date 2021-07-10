@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using ConnectionLibrary;
 using Microsoft.Extensions.Configuration;
 
 namespace AppsettingsFolder.Classes
@@ -62,7 +61,7 @@ namespace AppsettingsFolder.Classes
         /// <summary>
         /// Current environment
         /// </summary>
-        public static ConnectionLibrary.Environments Environment { get; set; }
+        public static Environments Environment { get; set; }
 
         /// <summary>
         /// Initialize ConfigurationBuilder for appsettings

@@ -1,4 +1,4 @@
-﻿using ConnectionLibrary;
+﻿using AppsettingsFolder.Classes;
 
 namespace AppsettingsFolder.Interfaces
 {

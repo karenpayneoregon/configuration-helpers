@@ -1,5 +1,4 @@
-﻿// ReSharper disable once CheckNamespace
-namespace ConnectionLibrary
+﻿namespace AppsettingsFolder.Classes
 {
     /// <summary>
     /// Server environments
