@@ -7,8 +7,17 @@ namespace AppsettingsFolder
     {
         static void Main(string[] args)
         {
+
+
+            Example();
+
+            Console.ReadLine();
+        }
+
+        private static void Example()
+        {
             Helper.Initializer();
-            Console.WriteLine($"{Helper.Environment.ToString()} = {Helper.ConnectionString}");
+            Console.WriteLine($"{Helper.Environment} = {Helper.ConnectionString}");
             Console.ReadLine();
         }
     }
