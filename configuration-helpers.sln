@@ -47,8 +47,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conventional", "Conventiona
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationAppConfigConsoleApp", "ConfigurationAppConfigConsoleApp\ConfigurationAppConfigConsoleApp.csproj", "{185F91F3-0FA6-4917-972D-8CBF6797C046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{469C312E-4B64-413D-809E-1B8B932B82FB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemoAppConfig2", "ConsoleDemoAppConfig2\ConsoleDemoAppConfig2.csproj", "{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forum questions", "Forum questions", "{2639FD57-C5D9-4C6D-9F97-FA672C738811}"
@@ -121,10 +119,6 @@ Global
 		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{185F91F3-0FA6-4917-972D-8CBF6797C046}.Release|Any CPU.Build.0 = Release|Any CPU
-		{469C312E-4B64-413D-809E-1B8B932B82FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{469C312E-4B64-413D-809E-1B8B932B82FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{469C312E-4B64-413D-809E-1B8B932B82FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{469C312E-4B64-413D-809E-1B8B932B82FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
