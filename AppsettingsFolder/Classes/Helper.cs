@@ -11,7 +11,8 @@ namespace AppsettingsFolder.Classes
         /// Configuration file name to read from.
         /// </summary>
         public static string ConfigurationFileName { get; set; } = 
-            Path.Combine(DirectoryExtensions.CurrentProjectFolder(), "appsettings.test.json");
+            Path.Combine(
+                DirectoryExtensions.CurrentProjectFolder(), "appsettings.test.json");
 
         public static void Initializer()
         {
@@ -26,21 +27,15 @@ namespace AppsettingsFolder.Classes
 
             Environment = setting.Environment;
 
-            ConnectionString = AssignConnectionString(Environment);
+            ConnectionString = (Environment switch
+            {
+                Environments.Production => ProductionConnectionString,
+                Environments.Test => TestConnectionString,
+                Environments.Development => DevelopmentConnectionString,
+                _ => throw new ArgumentOutOfRangeException(nameof(Environment), Environment, null)
+            });
 
         }
-        /// <summary>
-        /// Assign connection string by Environment from appsettings.json
-        /// </summary>
-        /// <param name="environment"><see cref="Environment"/></param>
-        /// <returns>Current connection string from Environment</returns>
-        private static string AssignConnectionString(Environments environment) => environment switch
-        {
-            Environments.Production => ProductionConnectionString,
-            Environments.Test => TestConnectionString,
-            Environments.Development => DevelopmentConnectionString,
-            _ => throw new ArgumentOutOfRangeException(nameof(environment), environment, null)
-        };
 
         /// <summary>
         /// Development connection string
