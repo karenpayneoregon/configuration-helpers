@@ -17,6 +17,18 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     }
 }
 ```
+Another example for connection environments, production, test, development
+
+```json
+{
+  "ConnectionStrings": {
+    "DevelopmentConnection": "Server=.\\SQLEXPRESS;Database=ocs;Integrated Security=true",
+    "ProductionConnection": "Server=.\\PROD;Database=ocs;Integrated Security=true",
+    "TestConnection": "Server=.\\TEST;Database=ocs;Integrated Security=true",
+    "Environment": 1
+  }
+}
+```
 
 # VB.NET
 
