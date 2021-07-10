@@ -49,7 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationAppConfigConso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{469C312E-4B64-413D-809E-1B8B932B82FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDemoAppConfig2", "ConsoleDemoAppConfig2\ConsoleDemoAppConfig2.csproj", "{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemoAppConfig2", "ConsoleDemoAppConfig2\ConsoleDemoAppConfig2.csproj", "{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forum questions", "Forum questions", "{2639FD57-C5D9-4C6D-9F97-FA672C738811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsettingsFolder", "AppsettingsFolder\AppsettingsFolder.csproj", "{BBA07376-2A24-4449-B693-756D565E421F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,10 @@ Global
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA07376-2A24-4449-B693-756D565E421F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA07376-2A24-4449-B693-756D565E421F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA07376-2A24-4449-B693-756D565E421F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA07376-2A24-4449-B693-756D565E421F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +156,8 @@ Global
 		{C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
 		{185F91F3-0FA6-4917-972D-8CBF6797C046} = {C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4}
 		{1E2D3249-EB22-4593-A6B6-31A9FB8E1B67} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
+		{2639FD57-C5D9-4C6D-9F97-FA672C738811} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
+		{BBA07376-2A24-4449-B693-756D565E421F} = {2639FD57-C5D9-4C6D-9F97-FA672C738811}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA2B729D-4928-4982-B0C2-724095A98E0E}
