@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppsettingsFolder", "Appset
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsConventional", "WindowsFormsConventional\WindowsFormsConventional.csproj", "{30016A7D-C934-4286-B8D2-DD4490F3D0B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsConventional1", "WindowsFormsConventional1\WindowsFormsConventional1.csproj", "{1FF577D5-C633-40D6-AD26-D89AF4F9A512}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +135,10 @@ Global
 		{30016A7D-C934-4286-B8D2-DD4490F3D0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30016A7D-C934-4286-B8D2-DD4490F3D0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30016A7D-C934-4286-B8D2-DD4490F3D0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF577D5-C633-40D6-AD26-D89AF4F9A512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF577D5-C633-40D6-AD26-D89AF4F9A512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF577D5-C633-40D6-AD26-D89AF4F9A512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF577D5-C633-40D6-AD26-D89AF4F9A512}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,6 +165,7 @@ Global
 		{2639FD57-C5D9-4C6D-9F97-FA672C738811} = {4CB88876-D54D-4197-9AC1-EDD333D2BDF5}
 		{BBA07376-2A24-4449-B693-756D565E421F} = {2639FD57-C5D9-4C6D-9F97-FA672C738811}
 		{30016A7D-C934-4286-B8D2-DD4490F3D0B9} = {C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4}
+		{1FF577D5-C633-40D6-AD26-D89AF4F9A512} = {C8DC6073-9E9B-40A8-A9E7-5A21FD0D06C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA2B729D-4928-4982-B0C2-724095A98E0E}
