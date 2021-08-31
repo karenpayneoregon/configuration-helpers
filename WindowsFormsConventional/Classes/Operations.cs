@@ -3,6 +3,9 @@ using System.Data;
 using System.Data.SqlClient;
 using static System.Configuration.ConfigurationManager;
 
+//Some may need this
+//using System.Collections.Specialized;
+
 namespace WindowsFormsConventional.Classes
 {
     public class Operations
