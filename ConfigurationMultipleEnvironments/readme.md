@@ -8,6 +8,8 @@ When reading an environment variable make sure the variable is defined like `ASP
 
 To try out each version see figure 5 in a console project.
 
+**Figure 1**
+
 ```json
 {
   "ConnectionsConfiguration": {
