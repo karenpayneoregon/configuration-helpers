@@ -1,4 +1,4 @@
-# About
+# Working with multiple environments for connection strings
 
 Demonstrates how to use a class project to get connection strings for Entity Framework Core 5 in non-asp.net core projects e.g. WPF, Console and Windows Forms.
 
