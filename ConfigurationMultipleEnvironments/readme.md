@@ -1,4 +1,4 @@
-﻿# About
+﻿# Working with multiple environments for connection strings
 
 This project demonstrates how to obtain a database connection string from either reading `appsettings.json` or from reading an `environment variable` for working with desktop apps and minor change for web apps.
 
