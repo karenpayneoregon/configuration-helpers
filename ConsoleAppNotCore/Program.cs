@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleAppNotCore.Classes;
 
 namespace ConsoleAppNotCore
 {
@@ -8,12 +9,11 @@ namespace ConsoleAppNotCore
         {
             var current = ApplicationSettings.GetFileLocation;
             Console.WriteLine($"Current path: {current}");
-            ApplicationSettings.SetFileLocation(current == "C:\\users\\test\\desktop\\file.csv" ? 
-                "C:\\users\\test\\desktop\\file_location.csv" : 
+            ApplicationSettings.SetFileLocation(current == "C:\\users\\test\\desktop\\file.csv" ?
+                "C:\\users\\test\\desktop\\file_location.csv" :
                 "C:\\users\\test\\desktop\\file.csv");
 
             Console.WriteLine($"Current path after set: {ApplicationSettings.GetFileLocation}");
-
             Console.ReadLine();
         }
     }

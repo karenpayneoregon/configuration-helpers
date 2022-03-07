@@ -3,7 +3,7 @@ using System.Configuration;
 using System.IO;
 using static System.Configuration.ConfigurationManager;
 
-namespace ConsoleAppNotCore
+namespace ConsoleAppNotCore.Classes
 {
     public class ApplicationSettings
     {
