@@ -12,6 +12,13 @@ namespace ConfigurationMultipleEnvironments
         
         static void Main(string[] args)
         {
+            Debug.WriteLine($"Json: {ConfigurationHelper.GetConnectionStringFromJson()}");
+            Debug.WriteLine($"{ConfigurationHelper.CurrentEnvironment}");
+
+        }
+
+        private static void Example1()
+        {
             // for demonstration purposes
             Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development");
 
@@ -19,7 +26,7 @@ namespace ConfigurationMultipleEnvironments
 
             Debug.WriteLine($"Json: {ConfigurationHelper.GetConnectionStringFromJson()}");
             Debug.WriteLine($"{ConfigurationHelper.CurrentEnvironment}");
-            
+
             Debug.WriteLine("");
 
             Debug.WriteLine($"Environment: {ConfigurationHelper.GetConnectionStringFrom_Environment()}");
