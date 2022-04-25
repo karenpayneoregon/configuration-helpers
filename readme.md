@@ -2,6 +2,8 @@
 
 Demonstrates how to use a class project to get connection strings for Entity Framework Core 5 in non-asp.net core projects e.g. WPF, Console and Windows Forms.
 
+April 2022, see the following [repository](https://github.com/karenpayneoregon/configurations-package) for EF Core 5 [NuGet package](https://www.nuget.org/packages/EntityFrameworkCoreHelpers/) to connect to SQL-Server with various options.
+
 #### Out of the box connection
 
 This is fine for hobbyist coder were the connection never changes while for professional development this method to connection to databases is restrictive in that when moving from development to test to production environment means the connection string must be updated and then rebuild the application for deployment.
